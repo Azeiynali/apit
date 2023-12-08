@@ -1,0 +1,19 @@
+apit
+a API Tester for debug your website APIs
+commands:
+	usage: apit [command] <options>
+
+	+ add -h after commands for see help of the command
+	+ star me on GitHub: 
+
+	addp: add a project
+	addf: add a folder
+	cpf: change project or folder
+	ls: projects or folders
+	tp: this path
+	rmp: remove a project
+	rmf: remove a folder
+	add [link]: add a API
+		--name [name]: name of API
+	rm [link/name]: remove a API
+
