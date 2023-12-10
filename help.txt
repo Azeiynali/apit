@@ -7,13 +7,37 @@ commands:
 	+ star me on GitHub: 
 
 	addp: add a project
-	addf: add a folder
-	cpf: change project or folder
-	ls: projects or folders
-	tp: this path
+		-C --cp: go to project after create
+		  -r -b -y -w: project color (red, blue, yellow, white)
+		  --base-link [LINK]: base link of project
+		  --v-name: set a variable
+		  --group [GROUP]: set a group for project
+		  --des [DESCRIPTION]: set a description for project
+		  --pass: set a password (After running, the password will be asked)
+	cp [PATH]: change path (go to projects, folders and APIs)
+	addf [NAME]: add a folder
+		   --project [NAME]: in other projects
+		-H --hide: hide folder
+	stp: show this path
 	rmp: remove a project
+		-N --no-questions: without asking questions
+		-O --only-items: Only delete items
+		-R --remove: not move to trash
 	rmf: remove a folder
+		-N --no-questions: without asking questions                                                                         
+		-O --only-items: Only delete items
+	    -R --remove: not move to trash
 	add [link]: add a API
-		--name [name]: name of API
-	rm [link/name]: remove a API
-
+		   --name [NAME]: name of API
+   		   --method [METHOD]: method of request (GET, POST, PUT, DELETE)
+		   --h-key-value: header key value
+		   --b-key-value: body key value
+		-R --run: run after create
+		   --timeout [SECONDS]: set timeout seconds
+		-C --cp: cp to api after create
+		-H --hide: set as a hide api
+		-F --from-file: open settings from file
+		-E --export [FILENAME]: export to json
+		   --raw [RAW]: raw args
+	sal: show all items
+	rm [name]: remove a API
