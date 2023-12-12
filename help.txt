@@ -6,7 +6,7 @@ commands:
 	+ add -h after commands for see help of the command
 	+ star me on GitHub: 
 
-	addp: add a project
+	addp [NAME]: add a project
 		-C --cp: go to project after create
 		  -r -b -y -w: project color (red, blue, yellow, white)
 		  --base-link [LINK]: base link of project
@@ -14,19 +14,19 @@ commands:
 		  --group [GROUP]: set a group for project
 		  --des [DESCRIPTION]: set a description for project
 		  --pass: set a password (After running, the password will be asked)
+	rmp [NAME]: remove a project
+		 -N --no-questions: without asking questions
+		 -O --only-items: Only delete items
+		 -R --remove: not move to trash
 	cp [PATH]: change path (go to projects, folders and APIs)
 	addf [NAME]: add a folder
 		   --project [NAME]: in other projects
 		-H --hide: hide folder
-	stp: show this path
-	rmp: remove a project
-		-N --no-questions: without asking questions
-		-O --only-items: Only delete items
-		-R --remove: not move to trash
 	rmf: remove a folder
 		-N --no-questions: without asking questions                                                                         
 		-O --only-items: Only delete items
 	    -R --remove: not move to trash
+	stp: show this path
 	add [link]: add a API
 		   --name [NAME]: name of API
    		   --method [METHOD]: method of request (GET, POST, PUT, DELETE)
@@ -34,10 +34,32 @@ commands:
 		   --b-key-value: body key value
 		-R --run: run after create
 		   --timeout [SECONDS]: set timeout seconds
-		-C --cp: cp to api after create
-		-H --hide: set as a hide api
+		-C --cp: cp to API after create
+		-H --hide: set as a hide API
 		-F --from-file: open settings from file
 		-E --export [FILENAME]: export to json
 		   --raw [RAW]: raw args
 	sal: show all items
-	rm [name]: remove a API
+	rm [name]: remove a AP
+		-N --no-questions: without asking questions
+		-O --only-items: Only delete items
+    	-R --remove: not move to trash
+	run [API]: run a API
+		-M --multi-processor [PRNUM]: run multi processor
+		-W --write [FILENAME]: write response in a file
+		-E --export [FILENAME]: write 
+		   --rm: remove API after run
+		   --raw: show raw
+		-N --no-show: not show response
+		   --proxy: send request with a proxy
+		   --IP: send request from a IP
+		-S --save: save to storage
+		   --remove-of-history: remove run of history
+	   	   --as-admin: run with root user | administrator
+	storage: show storage
+		-S --saved: saved APIs
+		-R --runs: runs history
+		run [NAME]: run a saved API
+		rm [NAME]: remove
+			you can replace [NAME] with id or name
+
